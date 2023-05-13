@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/initialize.css"/>
+  <link rel="stylesheet" href="./assets/css/style.css"/>
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="./images/logo.svg" alt="">
+    </header>
+    <section class="calculating-board">
+      <div class="inputs">
+        <form action="">
+          <div class="input-group">
+            <label for="">Bill</label> 
+            <img src="./images/icon-dollar.svg" alt=""><input type="text">
+          </div>
+          <div class="input-group">
+            <label for=""> Select Tip %</label>
+            <ul>
+              <li>
+                <label for="tip5"><a href=""><input type="radio" name="tipvalue" id="tip5"> 5%</a></label>
+              </li>
+              <li>
+                <label for="tip10"><a href=""><input type="radio" name="tipvalue" id="tip10"> 10%</a></label>
+              </li>
+              <li>
+                <label for="tip15"><a href=""><input type="radio" name="tipvalue" id="tip15"> 15%</a></label>
+              </li>
+              <li>
+                <label for="tip25"><a href=""><input type="radio" name="tipvalue" id="tip25"> 25%</a></label>
+              </li>
+              <li>
+                <label for="tip50"><a href=""><input type="radio" name="tipvalue" id="tip50">  50%</a></label>
+              </li>
+              <li>
+                <input type="text" name="" class="custom-tip" placeholder="Custom">
+              </li>
+            </ul>
+          </div>
+          <div class="input-group">
+            <label for="">Number of People</label> 
+            <img src="./images/icon-person.svg" alt=""><input type="text">
+          </div>
+        </form>
+      </div>
+      <div class="results">
+        <div class="tip">
+          <div class="left-side">
+            <span class="title">Tip Amount</span> <br>
+            <span class="subtitle">/person</span>
+          </div>
+          <div class="right-side">
+            <p>$ 0.00</p>
+          </div>
+        </div> 
+        <div class="total">
+          <div class="left-side">
+            <span class="title">Total</span> <br>
+            <span class="subtitle">/person</span>
+          </div>
+          <div class="right-side">
+            <p>$ 0.00</p>
+          </div>
+        </div>
+        <button class="reset">Reset</button>
+      </div>     
+    </section>
+  </div>
+</body>
+</html>

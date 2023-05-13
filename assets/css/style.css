@@ -1,0 +1,165 @@
+body{
+    background-color: #c5e4e7;
+    font-family: 'IBM Plex Mono';
+}
+header{
+    text-align: center;
+}
+header img{
+    margin:3em;
+}
+.container{
+    display: block;
+    width: 75%;
+    margin:auto;
+}
+
+.calculating-board {
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px -3px black;
+}
+
+.calculating-board{
+    display: table; /* Make the container element behave like a table */
+    width: 100%;
+}
+
+.calculating-board .inputs, .calculating-board .results{
+    width: 50%;
+    display: table-cell;
+}
+.calculating-board .inputs label, .calculating-board .inputs input{
+    display: block;
+}
+.inputs{
+    padding-right: 2em;
+    vertical-align: middle;
+}
+.inputs .input-group > label{
+    margin-bottom: 5px;
+    color: #6c7b7c;
+    font-size: 13px;
+}
+
+.inputs .input-group > input[type='text']{
+    width: 100%;
+    padding: 8px 20px;
+    background: #f3f9fb;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.inputs ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: table;
+    width: 100%;
+}
+.inputs ul li {
+    position: relative;
+    display: inline-flex;
+    width: 30.5%;
+    margin-right: 4%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    position: relative;
+    background: #00444a;
+    font-weight: 500;
+    text-align: center;
+}
+.inputs ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+.custom-tip{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #f3f9fb;
+    border-radius: 5px;
+    color: #9fe8df;
+    text-align: center;
+}
+
+.inputs ul li input[type="radio"]{
+    display:none;
+}
+
+.inputs ul li label{
+    display:inline-block;
+    width:100%;
+    text-align:center;
+}
+.inputs ul li:nth-child(3), .inputs ul li:nth-child(6){
+    margin-right: 0;
+} 
+.input-group{
+    margin-bottom: 1.2em;
+    position: relative;
+}
+.input-group img{
+    position: absolute;
+    top: 32px;
+    left: 10px;
+}
+.results{
+    position:relative;
+    background-color: #00474c;
+    border-radius: 10px;
+    padding: 4em 2em ;
+}
+.tip, .total{
+    margin-bottom: 20px;
+}
+.results .tip, .results .total{
+    display:flex;
+}
+.results .right-side, .results .left-side{
+    width: 50%;
+}
+
+.results .title{
+    color: white;
+    font-weight: 500;
+}
+.results .subtitle{
+    font-size: 13px;
+    font-weight: 500;
+    color: #789ea3;
+}
+.right-side p, .left-side p{
+    font-size: 200%;
+    margin: 0;
+    text-align: right;
+    color: #9fe8df;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+button.reset{
+    position: absolute;
+    bottom: 17px;
+    width: 85%;
+    margin: auto;
+    display: inline-block;
+    margin: 3% 0%;
+    background: #27c2ad;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    color: #00464b;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+}
