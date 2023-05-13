@@ -50,6 +50,15 @@ header img{
     border: none;
     border-radius: 5px;
     text-align: right;
+    font-weight: 700;
+    color: #003230;
+    border:2px white solid;
+}
+
+
+.inputs .input-group > input[type='text']:focus,.inputs .input-group > input[type='text']:active, .inputs .input-group > input[type='text']:focus-visible {
+    border:2px #5aa99f solid;
+    outline: none;
 }
 
 .inputs ul{
@@ -79,6 +88,41 @@ header img{
     padding: 10px;
     color: #f9f9f9;
     text-decoration: none;
+}
+.inputs ul li.active{
+    background-color:#9fe8df;
+    
+}
+.inputs ul li.active a{
+    color: #004242;
+}
+
+.inputs ul li:hover{
+    animation: tipselecttrans .35s ease-in;
+    background-color:#9fe8df;
+}
+
+.inputs ul li a:hover{
+    animation: tipselecttransancre .35s ease-in;
+    color:#004242;
+}
+
+
+@keyframes tipselecttrans {
+    from{
+        background-color: #004242;
+    }
+    to{
+        background-color:#9fe8df;
+    }
+}
+@keyframes tipselecttransancre {
+    from{
+        color: #f9f9f9;
+    }
+    to{
+        background-color:#004242;
+    }
 }
 
 .custom-tip{
@@ -110,7 +154,7 @@ header img{
 }
 .input-group img{
     position: absolute;
-    top: 32px;
+    top: 34px;
     left: 10px;
 }
 .results{
@@ -162,4 +206,20 @@ button.reset{
     text-transform: uppercase;
     font-weight: 600;
     font-size: 15px;
+}
+button.reset:hover{
+    background: #9fe8df;
+}
+
+button.reset:hover{
+    animation: resetanim .3s ease-in;
+}
+
+@keyframes resetanim {
+    from{
+        background: #27c2ad;
+    }
+    to{
+        background: #9fe8df;
+    }
 }
