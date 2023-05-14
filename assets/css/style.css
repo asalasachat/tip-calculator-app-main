@@ -224,7 +224,12 @@ button.reset:hover{
     }
 }
 
-@media screen and (max-width: 768px) {    
+@media screen and (max-width: 768px) {   
+    
+    .container{
+        width: 100%;
+    }
+
     .calculating-board{
         display: block; 
         width: 100%;
