@@ -22,7 +22,7 @@ header img{
 }
 
 .calculating-board{
-    display: table; /* Make the container element behave like a table */
+    display: table; 
     width: 100%;
 }
 
@@ -194,10 +194,10 @@ header img{
 button.reset{
     position: absolute;
     bottom: 17px;
-    width: 85%;
+    width: 80%;
     margin: auto;
     display: inline-block;
-    margin: 3% 0%;
+    margin: auto;
     background: #27c2ad;
     border: none;
     padding: 8px;
@@ -221,5 +221,31 @@ button.reset:hover{
     }
     to{
         background: #9fe8df;
+    }
+}
+
+@media screen and (max-width: 768px) {    
+    .calculating-board{
+        display: block; 
+        width: 100%;
+    }
+
+    .calculating-board .inputs{
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+    .calculating-board .inputs, .calculating-board .results{
+        display: inline-block;
+        width: 100%;
+    }
+    .inputs ul li{
+        width:47% ;
+        margin-right: 4%;
+    }
+    .inputs ul li:nth-child(3){
+        margin-right: 4%;
+    }
+    .inputs ul li:nth-child(2), .inputs ul li:nth-child(4), .inputs ul li:nth-child(6){
+        margin-right: 0 !important;
     }
 }
