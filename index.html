@@ -30,7 +30,7 @@
         <form action="">
           <div class="input-group">
             <label for="">Bill</label> 
-            <img src="./images/icon-dollar.svg" alt=""><input type="text">
+            <img src="./images/icon-dollar.svg" alt=""><input type="text" data-name="bill" data-prevVale="">
           </div>
           <div class="input-group">
             <label for=""> Select Tip %</label>
@@ -51,13 +51,13 @@
                 <label for="tip50"><a href=""><input type="radio" name="tipvalue" id="tip50">  50%</a></label>
               </li>
               <li>
-                <input type="text" name="" class="custom-tip" placeholder="Custom">
+                <input type="text" name="" class="custom-tip" data-name="custo" data-prevVale="m-tip" placeholder="Custom">
               </li>
             </ul>
           </div>
           <div class="input-group">
             <label for="">Number of People</label> 
-            <img src="./images/icon-person.svg" alt=""><input type="text">
+            <img src="./images/icon-person.svg" alt=""><input type="text" data-name="number-people" data-prevVale="">
           </div>
         </form>
       </div>
@@ -84,5 +84,6 @@
       </div>     
     </section>
   </div>
+  <script src="assets/js/index.js"></script>
 </body>
 </html>
