@@ -36,21 +36,21 @@
             <label for=""> Select Tip %</label>
             <ul>
               <li class="active">
-                <label for="tip5"><a href=""><input type="radio" name="tipvalue" id="tip5"> 5%</a></label>
+                <label for="tip5"><a href="#"><input type="radio" name="tipvalue" id="tip5" data-value="5"> 5%</a></label>
               </li>
               <li>
-                <label for="tip10"><a href=""><input type="radio" name="tipvalue" id="tip10"> 10%</a></label>
+                <label for="tip10"><a href="#"><input type="radio" name="tipvalue" id="tip10" data-value="10"> 10%</a></label>
               </li>
               <li>
-                <label for="tip15"><a href=""><input type="radio" name="tipvalue" id="tip15"> 15%</a></label>
+                <label for="tip15"><a href="#"><input type="radio" name="tipvalue" id="tip15" data-value="15"> 15%</a></label>
               </li>
               <li>
-                <label for="tip25"><a href=""><input type="radio" name="tipvalue" id="tip25"> 25%</a></label>
+                <label for="tip25"><a href="#"><input type="radio" name="tipvalue" id="tip25" data-value="25"> 25%</a></label>
               </li>
               <li>
-                <label for="tip50"><a href=""><input type="radio" name="tipvalue" id="tip50">  50%</a></label>
+                <label for="tip50"><a href="#"><input type="radio" name="tipvalue" id="tip50" data-value="50">  50%</a></label>
               </li>
-              <li>
+              <li class="">
                 <input type="text" name="" class="custom-tip" data-name="custo" data-prevVale="m-tip" placeholder="Custom">
               </li>
             </ul>
@@ -68,7 +68,7 @@
             <span class="subtitle">/person</span>
           </div>
           <div class="right-side">
-            <p>$ 0.00</p>
+            <p id="tipAmoutValue">$ 0.00</p>
           </div>
         </div> 
         <div class="total">
@@ -77,7 +77,7 @@
             <span class="subtitle">/person</span>
           </div>
           <div class="right-side">
-            <p>$ 0.00</p>
+            <p id="totalValue">$ 0.00</p>
           </div>
         </div>
         <button class="reset">Reset</button>
